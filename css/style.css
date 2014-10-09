@@ -51,7 +51,15 @@ body {
         margin: 0 0 0 250px;
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
+		background-image: url("../images/bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
     }
+}
+
+.row {
+	margin-left:0px;
+	margin-right: 0px;
 }
 
 .navbar-header {
