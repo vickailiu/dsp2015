@@ -27,7 +27,23 @@ $(function() {
     })
 })
 
+
+/**  
+scroll to element function
+**/
+function scrollToElement(selector, time, verticalOffset) {
+    time = typeof(time) != 'undefined' ? time : 500;
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $(selector);
+    offset = element.offset();
+    offsetTop = offset.top + verticalOffset;
+    $('html, body').animate({
+        scrollTop: offsetTop
+    }, time);           
+}
+
 /* smooth scrolling for scroll to top */
-$('.scroll-top').click(function(){
+$('.scroll-top').click(function(e){
+    e.preventDefault();
   $('body,html').animate({scrollTop:0},500);
 })
