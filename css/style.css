@@ -32,6 +32,19 @@ body {
     width: 100%;
 }
 
+.navbar-toggle {
+    border-color:white;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-toggle:hover, .navbar-toggle:active {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.icon-bar {
+    background-color: white !important;
+}
+
 .scroll-top {
 	position: fixed;
 	bottom: 0;
